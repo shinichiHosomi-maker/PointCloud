@@ -27,7 +27,7 @@ function init() {
 
         const vertexColors = ( geometry.hasAttribute( 'color' ) === true );
 
-        const material = new THREE.PointsMaterial( { size: 0.001, vertexColors: vertexColors } );
+        const material = new THREE.PointsMaterial( { size: 0.01, vertexColors: vertexColors } );
 
         points = new THREE.Points( geometry, material );
         scene.add( points );
