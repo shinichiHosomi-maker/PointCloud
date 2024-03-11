@@ -21,7 +21,7 @@ function init() {
     clock = new THREE.Clock();
 
     const loader = new XYZLoader();
-    loader.load( 'frame_hy1_resample.xyz', function ( geometry ) {
+    loader.load( 'frame_hy1_trans.xyz', function ( geometry ) {
 
         geometry.center();
 
@@ -65,8 +65,8 @@ function animate() {
     if ( points ) {
 
         //points.rotation.x += delta * 0.1;
-        //points.rotation.y += delta * 0.1;
-        points.rotation.z += delta * 0.1;
+        points.rotation.y += delta * 0.1;
+        //points.rotation.z += delta * 0.1;
         
     }
 
